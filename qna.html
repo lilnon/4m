@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Q&A น่ารักของเรา</title>
+  <title>Q&A</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -111,35 +111,45 @@
 
   <script>
     let wrongAnswers = 0;
-
+  
     function checkAnswer(button, isCorrect) {
       const result = button.parentElement.querySelector('.result');
       const buttons = button.parentElement.querySelectorAll('button');
       const finalResult = button.parentElement.parentElement.querySelector('.final-result');
-
+  
+      // ปรับแต่งสถานะของปุ่มให้ทำงานทันทีเมื่อกด
       if (isCorrect) {
         button.classList.remove('btn-outline', 'btn-info');
         button.classList.add('bg-green-400', 'text-white');
-        result.classList.remove('hidden');  // แสดงข้อความ "เก่งที่ฉุดเยย"
-        result.classList.add('result');  // เริ่มอนิเมชัน
-
-        // ปิดปุ่มทั้งหมดในคำถามนั้น
+        result.classList.remove('hidden');
+        result.classList.add('result');
+        
+        // ปิดปุ่มทั้งหมดในคำถามนั้นทันที
         buttons.forEach(b => {
-          b.disabled = true;
+          b.disabled = true;  // disable ทุกปุ่ม
         });
       } else {
         button.disabled = true;
         button.classList.remove('btn-outline', 'btn-error');
         button.classList.add('bg-red-400', 'text-white');
         wrongAnswers++;
-
+  
         // ถ้าตอบผิดหมด 3 คำถาม
         if (wrongAnswers === 3) {
-          finalResult.classList.remove('hidden'); // แสดงข้อความ "ชอบกินเธอ"
+          finalResult.classList.remove('hidden');
         }
       }
+  
+      // แก้ไขให้ปุ่มอื่นๆ ในคำถามนั้นไม่สามารถคลิกได้ทันที
+      buttons.forEach(b => {
+        if (!b.disabled) {
+          b.classList.add('hover:bg-transparent');
+          b.classList.remove('hover:bg-white');
+        }
+      });
     }
   </script>
+  
 
 </body>
 </html>
