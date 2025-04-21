@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เรื่องราวของเรา</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Itim', cursive;
+        background: linear-gradient(to bottom, #ffe6f0, #fff);
+        overflow-x: hidden;
+      }
+      .heart {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center;
+        background-size: contain;
+        animation: floatUp linear forwards;
+        pointer-events: none;
+        z-index: 50;
+      }
+      @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-100vh); opacity: 0; }
+      }
+      .fade-in {
+        animation: fadeIn 1.5s ease-in-out;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body class="text-center text-gray-800">
+    <div class="min-h-screen flex flex-col justify-center items-center gap-6 p-6 fade-in">
+      <h1 class="text-4xl font-bold text-pink-700">Happy 4 month anniversary💖</h1>
+      <p class="text-lg max-w-md">
+        4 เดือนแล้วที่เราได้จับมือด้วยกัน <br>ขอบคุณที่ทำให้ทุกวันของเค้ามีความหมายนะ<br>
+        เค้าจะอยู่ข้าง ๆ พะแพงเสมอ ไม่ว่าจะวันไหน ❤️
+      </p>
+
+      <section id="timeline" class="max-w-4xl mx-auto fade-in">
+        <h2 class="text-4xl font-bold text-pink-600 mb-12">Timeline </h2>
+
+        <div class="relative border-l-4 border-pink-300">
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">20 ธันวาคม 2024</h3>
+            <p class="mb-4">อยากให้เธอรู้ว่าเธอพิเศษจริงๆ ตั้งใจจะจีบจริงๆ</p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\2.jpg" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">ดอกไม้ดอกแรกที่ให้แหละ </p>
+            </div>
+          </div>
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">21 ธันวาคม 2024</h3>
+            <p class="mb-4">รู้แล้วว่าเธอชอบดอกไม้ ก็เลยให้ดอกไม้ข้างทาง ถึงจะเป็นดอกไม้ข้างทางแต่เธอดีใจมากๆเลย </p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\7.png" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">ดอกไม้ข้างทางแหละ </p>
+            </div>
+          </div>
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">10 มกราคม 2025</h3>
+            <p class="mb-4">เจอดอกไม้ตั้งไว้ที่หน้าร้านดอกไม้ มันโคตรสวยเลย ก็เลยซื้อให้ เธอดีใจทุกครั้งเลยที่ได้ดอกไม้ </p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\3.jpg" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">ดอกไม้เท่ๆแหละ </p>
+            </div>
+          </div>
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">22 มกราคม 2025</h3>
+            <p class="mb-4">ครบรอบเดือน แรกให้ดอกไม้เปนช่อเยย </p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\4.jpg" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">ดอกไม้เปนช่อแหละ </p>
+            </div>
+          </div>
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">22 กุมภาพันธุ์ 2025</h3>
+            <p class="mb-4">ครบรอบเดือนสอง ได้พาไปทะเลด้วย โคตรภูมิใจเลยที่ได้พาเธอไปจริงๆ </p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\5.jpg" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">ทะเลแหละ </p>
+            </div>
+          </div>
+
+          <div class="mb-16 ml-6 relative fade-in">
+            <div class="absolute w-6 h-6 bg-pink-500 rounded-full -left-3 border-4 border-white z-10"></div>
+            <h3 class="text-xl font-bold text-pink-700">22 มีนาคม 2025</h3>
+            <p class="mb-4">ครบรอบเดือนฉาม เป็นเดือนแรกเลย ที่ไม่ได้ให้อะไรเลย ยังเสียใจอยู่เลย TT</p>
+            <div class="w-48 bg-white shadow-lg rounded-lg p-2 border border-gray-300">
+                <div class="bg-gray-100 w-full h-48 flex items-center justify-center text-gray-400 text-sm">
+                    <img src="image\6.jpg" alt="" class="object-cover w-full h-full">
+                  </div>
+              <p class="text-center text-sm text-gray-600 mt-2">เดือนฉามแหละ </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="flex flex-col gap-8 mt-20 px-10">
+        <a href="./qna.html">
+        <button class="btn bg-white text-black border-[#e5e5e5] hover:bg-white">
+          Q&A
+        </button>
+      </a>
+        <button onclick="openSurprise()" class="btn btn-error animate-bounce">
+          เปิดกล่องเซอร์ไพรส์ 💌
+        </button>
+      </div>
+      
+    </div>
+
+    <dialog id="my_modal" class="modal">
+      <div class="modal-box bg-white">
+        <h3 class="font-bold text-lg text-pink-600">จากเค้าถึงพะแพง 💖</h3>
+        <p class="py-4 text-black">เค้ารักพะแพงมาก ๆ ขอบคุณที่อยู่ด้วยกันตลอด 
+            <br>
+            ขอให้อยู่ข้าง ๆ กันไปแบบนี้ตลอดไปเลยนนะคะ</p>
+        
+        <div class="modal-action">
+          <form method="dialog">
+            <button class="btn">ปิด</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script>
+      let heartInterval;
+      let audio;
+
+      function openSurprise() {
+        document.getElementById('my_modal').showModal();
+        playMusic();
+        startFloatingHearts();
+      }
+
+      function playMusic() {
+        if (!audio) {
+          audio = new Audio("https://www.bensound.com/bensound-music/bensound-romantic.mp3");
+        }
+        audio.loop = true;
+        audio.play();
+      }
+
+      function startFloatingHearts() {
+        heartInterval = setInterval(() => {
+          const heart = document.createElement("div");
+          heart.classList.add("heart");
+          heart.style.left = `${Math.random() * 100}vw`;
+          heart.style.animationDuration = `${2 + Math.random() * 3}s`;
+          document.body.appendChild(heart);
+          setTimeout(() => heart.remove(), 5000);
+        }, 300);
+      }
+
+      function stopFloatingHearts() {
+        clearInterval(heartInterval);
+      }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('my_modal');
+        modal.addEventListener('close', () => {
+          stopFloatingHearts();
+          if (audio) audio.pause();
+        });
+      });
+    </script>
+  </body>
+</html>
